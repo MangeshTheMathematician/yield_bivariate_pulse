@@ -1,23 +1,25 @@
-# ===================================================
+# ==========================================
 # STEP 1: BRING IN THE TOOLS
-# ===================================================
+# ==========================================
 # Import Streamlit, the framework that builds the web dashboard interface.
+import streamlit as st
+
+# NOW you can set the page config (Must be the first Streamlit command!)
 st.set_page_config(
     page_title="The Yield Matrix | MangsHessianAI",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded"
 )
-import streamlit as st 
 
 # Import Pandas, the library used for building and manipulating data tables.
-import pandas as pd 
+import pandas as pd
 
 # Import FRED API, the tool that directly connects to the Federal Reserve database.
-from fredapi import Fred 
+from fredapi import Fred
 
-# Configure the web page to stretch across the full monitor and set the browser tab title.
-st.set_page_config(page_title="MangsHessianAI | Yield Matrix", layout="wide")
+# Render the main application title at the top of the dashboard.
+st.title("MangsHessianAI: The Yield Matrix")
 
 # Render the main application title at the top of the dashboard.
 st.title("MangsHessianAI: The Yield Matrix")
