@@ -2,6 +2,12 @@
 # STEP 1: BRING IN THE TOOLS
 # ===================================================
 # Import Streamlit, the framework that builds the web dashboard interface.
+st.set_page_config(
+    page_title="The Yield Matrix | MangsHessianAI",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 import streamlit as st 
 
 # Import Pandas, the library used for building and manipulating data tables.
