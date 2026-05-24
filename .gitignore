@@ -1,0 +1,21 @@
+# ===================================================
+# MANGSHESSIAN AI: MASTER .GITIGNORE FILE
+# ===================================================
+
+# 1. THE SECURITY FIREWALL
+# What it is: The hidden file storing your private FRED API key.
+# Why block it: Hackers scrape GitHub 24/7 for exposed API keys. 
+# If uploaded, your key will be stolen instantly, locking you out or spamming the Fed.
+.streamlit/secrets.toml
+
+# 2. THE SYSTEM EXHAUST (PYTHON)
+# What it is: Background "bytecode" files Python creates to run slightly faster.
+# Why block it: These are specific to your physical laptop's hardware. 
+# They are useless to the cloud and just pollute your repository with unreadable garbage.
+__pycache__/
+
+# 3. THE SYSTEM EXHAUST (MAC OS)
+# What it is: A hidden Mac system file that remembers folder window sizes and icon positions.
+# Why block it: It has nothing to do with your code. If you ever open this folder on a Mac, 
+# the OS will change this file and falsely trigger a Git update, which is incredibly annoying.
+.DS_Store
