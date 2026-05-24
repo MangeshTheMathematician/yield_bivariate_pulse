@@ -18,8 +18,7 @@ import pandas as pd
 # Import FRED API, the tool that directly connects to the Federal Reserve database.
 from fredapi import Fred
 
-# Render the main application title at the top of the dashboard.
-st.title("MangsHessianAI: The Yield Matrix")
+
 
 # Render the main application title at the top of the dashboard.
 st.title("MangsHessianAI: The Yield Matrix")
